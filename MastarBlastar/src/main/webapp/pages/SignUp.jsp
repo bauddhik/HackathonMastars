@@ -8,8 +8,8 @@
 <title>Sign UP</title>
 </head>
 <body>
-<s:form action="register">  
-<s:textfield name="signUp.name" label="Name"></s:textfield>
+<s:form action="register">   
+<s:textfield style="border-radius:4px;" name="signUp.name" label="Name"></s:textfield>
 <s:textfield name="signUp.employeeid" label="Employee Id"></s:textfield>    
 <s:password name="signUp.password" label="Password"></s:password>  
 <s:textfield name="signUp.email" label="Email"></s:textfield>  
