@@ -13,5 +13,9 @@ public class NewUserAction extends ActionSupport implements SessionAware{
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	public String execute() {
+		
+		return "SUCCESS";
+	}
 }
