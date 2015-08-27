@@ -8,10 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<s:form action="signin">  
-<s:textfield name="userDetails.employeeid" label="Employee Id"></s:textfield>    
-<s:password name="userDetails.password" label="Password"></s:password>  
-<s:submit value="Login"></s:submit>  
-</s:form> 
+<s:if test="loginStatus=='available'">
+
+Bauddhik <s:property value='loginStatus'/>
+</s:if>
+<s:else>
+<%  
+     response.sendRedirect("form");  
+    %> 
+</s:else>
 </body>
 </html>
