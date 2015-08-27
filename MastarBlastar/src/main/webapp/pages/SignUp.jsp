@@ -8,14 +8,19 @@
 <title>Sign UP</title>
 </head>
 <body>
-<s:form action="register">   
-<s:textfield style="border-radius:4px;" name="signUp.name" label="Name"></s:textfield>
-<s:textfield name="signUp.employeeid" label="Employee Id"></s:textfield>    
-<s:password name="signUp.password" label="Password"></s:password>  
-<s:textfield name="signUp.email" label="Email"></s:textfield>  
-<s:textfield name="signUp.supemail" label="Supervisor Email"></s:textfield>  
-<s:select cssStyle="width:155px;" list="{'MASTARS','FLPS','IMPACTS'}"  name="signUp.project" label="Project"></s:select>  
-<s:submit value="Register"></s:submit>  
+<s:form action="register"> 
+<table style="margin:auto;"> 
+<tr>
+<img src="Verizon-logo-big.jpg" alt="" width="100%" />
+</tr>
+<s:textfield cssStyle="border: 1px solid grey; border-radius:4px; margin:10px;" name="signUp.name" label="NAME"></s:textfield>
+<s:textfield cssStyle="border: 1px solid grey; border-radius:4px; margin:10px;" name="signUp.employeeid" label="EMPLOYEE ID"></s:textfield>    
+<s:password cssStyle="border: 1px solid grey; border-radius:4px; margin:10px;" name="signUp.password" label="PASSWORD"></s:password>  
+<s:textfield cssStyle="border: 1px solid grey; border-radius:4px; margin:10px;" name="signUp.email" label="EMAIL"></s:textfield>  
+<s:textfield cssStyle="border: 1px solid grey; border-radius:4px; margin:10px;" name="signUp.supemail" label="SUPERVISOR EMAIL"></s:textfield>  
+<s:select cssStyle="border: 1px solid grey; border-radius:4px; margin:10px; width:145px" list="{'MASTARS','FLPS','IMPACTS'}"  name="signUp.project" label="PROJECT"></s:select>  
+<s:submit cssStyle="float:left; margin-top:10px; margin-left:180px; border:none; background-color:red; color:white; font-weight:bold; height:35px; border-radius:4px;" value="REGISTER"></s:submit>  
+</table>
 </s:form> 
 </body>
 </html>
