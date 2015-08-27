@@ -10,6 +10,11 @@
   <action name="form" class="com.mb.action.NewUserAction">  
    <result name="SUCCESS">pages/SignUp.jsp</result>  
   </action>  
+  
+  <action name="register" class="com.mb.action.SignUpUserAction">  
+   <result name="SUCCESS">pages/LoginPage.jsp</result>  
+  </action> 
+  
  </package>  
   
 </struts>  
