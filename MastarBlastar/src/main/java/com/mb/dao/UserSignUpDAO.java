@@ -2,10 +2,12 @@ package com.mb.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import com.mb.connection.ConnectionPool;
-import com.mb.pojo.SignUpUser;
+import com.mb.pojo.UserDetails;
 
 public class UserSignUpDAO {
 
@@ -16,7 +18,7 @@ private Connection connection;
 		connection = ConnectionPool.getConnection();
 		
 	}
-	public int saveUser(SignUpUser signupData){
+	public int saveUser(UserDetails signupData){
 		
 		int indicator = 0;
 		String saveCustomerQuery = "insert into user_table values(?,?,?,?,?,?)";
@@ -35,5 +37,32 @@ private Connection connection;
 		return indicator;
 		
 		
+	}
+	public String checkLogin(UserDetails userDetails) {
+		// TODO Auto-generated method stub
+		int indicator =0;
+		String getCustomerQuery = "select count(*) AS total from user_table where "
+				+ "employeeid ="+userDetails.getEmployeeid()+" and password ="+ userDetails.getPassword();
+		System.out.println("Query formed is..." + getCustomerQuery);
+		Statement stmt;
+		try {
+			stmt = connection.createStatement();
+			ResultSet resultSet = stmt.executeQuery(getCustomerQuery);
+			System.out.println("inside DAO");
+			
+			while(resultSet.next()){
+				indicator = resultSet.getInt("total");
+			}
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Indicator is....  " + indicator);
+		if(indicator == 0){
+			return "notavailable";
+		}
+		else{
+			return "available";
+		}
 	}
 }

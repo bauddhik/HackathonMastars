@@ -15,6 +15,11 @@
    <result name="SUCCESS">pages/LoginPage.jsp</result>  
   </action> 
   
+  <action name="signin" class="com.mb.action.UserLoginAction">  
+   <result name="SUCCESS">pages/UserHome.jsp</result>  
+  </action> 
+  
+  
  </package>  
   
 </struts>  

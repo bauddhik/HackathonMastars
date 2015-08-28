@@ -1,6 +1,6 @@
 package com.mb.pojo;
 
-public class SignUpUser {
+public class UserDetails {
 
 	private String name;
 	private String email;

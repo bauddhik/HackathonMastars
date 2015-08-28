@@ -5,19 +5,19 @@ import java.util.Map;
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.mb.dao.UserSignUpDAO;
-import com.mb.pojo.SignUpUser;
+import com.mb.pojo.UserDetails;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class SignUpUserAction extends ActionSupport implements SessionAware{
 
-	private SignUpUser signUp;
+	private UserDetails signUp;
 	private int indicator;
 	
-	public SignUpUser getSignUp() {
+	public UserDetails getSignUp() {
 		return signUp;
 	}
 
-	public void setSignUp(SignUpUser signUp) {
+	public void setSignUp(UserDetails signUp) {
 		this.signUp = signUp;
 	}
 
