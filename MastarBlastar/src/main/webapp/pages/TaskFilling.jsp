@@ -22,6 +22,47 @@ Daily Task Planner
 <td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
+<td><s:button value="Save"/></td>
+</tr>
+<tr>
+<td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
+<td><s:textfield name="taskPlanner.startTime" id="startTime"/></td>
+<td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
+<td><s:button value="Save"/></td>
+</tr>
+<tr>
+<td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
+<td><s:textfield name="taskPlanner.startTime" id="startTime"/></td>
+<td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
+<td><s:button value="Save"/></td>
+</tr>
+<tr>
+<td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
+<td><s:textfield name="taskPlanner.startTime" id="startTime"/></td>
+<td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
+<td><s:button value="Save"/></td>
+</tr>
+<tr>
+<td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
+<td><s:textfield name="taskPlanner.startTime" id="startTime"/></td>
+<td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
+<td><s:button value="Save"/></td>
+</tr>
+<tr>
+<td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
+<td><s:textfield name="taskPlanner.startTime" id="startTime"/></td>
+<td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
+<td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
+<td><s:button value="Save"/></td>
 </tr>
 </table>
 
