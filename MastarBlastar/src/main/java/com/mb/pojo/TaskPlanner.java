@@ -2,6 +2,13 @@ package com.mb.pojo;
 public class TaskPlanner {
 
 	private String taskName;
+	private String employeeid;
+public String getEmployeeid() {
+		return employeeid;
+	}
+	public void setEmployeeid(String employeeid) {
+		this.employeeid = employeeid;
+	}
 private String startTime;
 private String taskDescription;
 public String getTaskDescription() {

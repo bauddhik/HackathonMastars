@@ -2,6 +2,7 @@ package com.mb.action;
 
 import java.util.Map;
 
+import org.apache.struts2.dispatcher.SessionMap;
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.mb.dao.UserSignUpDAO;
@@ -13,6 +14,7 @@ public class UserLoginAction extends ActionSupport implements SessionAware{
 	private UserDetails userDetails;
 	private String loginStatus;
 	private String employeeId;
+	private SessionMap<String,Object> sessionMap;
 	
 	public String getEmployeeId() {
 		return employeeId;
@@ -39,8 +41,9 @@ public class UserLoginAction extends ActionSupport implements SessionAware{
 	}
 
 	@Override
-	public void setSession(Map<String, Object> arg0) {
+	public void setSession(Map<String, Object> map) {
 		// TODO Auto-generated method stub
+		sessionMap = (SessionMap<String, Object>) map;
 		
 	}
 	
@@ -48,6 +51,7 @@ public class UserLoginAction extends ActionSupport implements SessionAware{
 		UserSignUpDAO user = new UserSignUpDAO();
 		loginStatus = user.checkLogin(userDetails);
 		employeeId = userDetails.getEmployeeid();
+		sessionMap.put("employeeId", employeeId);
 		return "SUCCESS";
 	}
 }

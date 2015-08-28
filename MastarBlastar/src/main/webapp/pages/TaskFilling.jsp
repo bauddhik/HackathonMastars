@@ -1,6 +1,9 @@
 <%@ taglib uri="/struts-tags" prefix="s"%>
 <html>
 <body>
+<s:if test="loginStatus=='available'">
+
+Bauddhik <s:property value='loginStatus'/>
 
 <p>
 Daily Task Planner
@@ -65,7 +68,13 @@ Daily Task Planner
 <td><s:button value="Save"/></td>
 </tr>
 </table>
-
+</s:form>
+</s:if>
+<s:else>
+<%  
+     response.sendRedirect("/pages/LoginPage.jsp?action=loginFailed");  
+    %> 
+</s:else>
 </body>
-</form>
+
 </html>

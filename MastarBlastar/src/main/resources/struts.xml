@@ -16,7 +16,7 @@
   </action> 
   
   <action name="signin" class="com.mb.action.UserLoginAction">  
-   <result name="SUCCESS">pages/UserHome.jsp</result>  
+   <result name="SUCCESS">pages/TaskFilling.jsp</result>  
   </action> 
   
   

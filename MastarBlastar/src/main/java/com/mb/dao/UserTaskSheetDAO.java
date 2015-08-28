@@ -3,6 +3,13 @@ package com.mb.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.lang.StringUtils;
 
 import com.mb.connection.ConnectionPool;
 import com.mb.pojo.TaskPlanner;
@@ -21,17 +28,40 @@ public class UserTaskSheetDAO {
 		try {
 			PreparedStatement ptmt = connection.prepareStatement(saveCustomerQuery);
 			
-			/*ptmt.setString(1, signupData.getName());
-			ptmt.setString(2, signupData.getEmployeeid());
-			ptmt.setString(3, signupData.getPassword());
-			ptmt.setString(4, signupData.getEmail());
-			ptmt.setString(5, signupData.getSupemail());
-			ptmt.setString(6, signupData.getProject());*/
-			indicator = ptmt.executeUpdate();
+			ptmt.setString(1, taskPlanner.getEmployeeid());
+			ptmt.setString(2,  taskPlanner.getTaskName());
+			ptmt.setString(3,  "Description");
+			ptmt.setTimestamp(4,  convertStringToTimestamp(taskPlanner.getStartTime()));
+			if(StringUtils.isNotBlank(taskPlanner.getStopTime()))
+			ptmt.setTimestamp(5,  convertStringToTimestamp(taskPlanner.getStopTime()));
+			else
+				ptmt.setTimestamp(5, null);
+			
+			if(StringUtils.isNotBlank(taskPlanner.getActualTime()))
+			ptmt.setInt(6, Integer.parseInt(taskPlanner.getActualTime()));
+			else
+				ptmt.setInt(6, 0);
+			
+			ptmt.setInt(7, Integer.parseInt(taskPlanner.getEstimatedTime()));
 		} catch (SQLException e) {
 			System.out.println("Exception" + e);
 		}
 		return indicator;
 				
 	}
+	
+	public static Timestamp convertStringToTimestamp(String str_date) {
+	    try {
+	      DateFormat formatter;
+	      formatter = new SimpleDateFormat("dd/MM/yyyy");
+	      Date date = (Date) formatter.parse(str_date);
+	      java.sql.Timestamp timeStampDate = new Timestamp(date.getTime());
+
+	      return timeStampDate;
+	    } catch (ParseException e) {
+	      System.out.println("Exception :" + e);
+	      return null;
+	    }
+	  }
+
 }
