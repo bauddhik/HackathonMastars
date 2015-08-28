@@ -9,7 +9,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.servlet.http.HttpSession;
+
 import org.apache.commons.lang.StringUtils;
+import org.apache.struts2.ServletActionContext;
 
 import com.mb.connection.ConnectionPool;
 import com.mb.pojo.TaskPlanner;
@@ -27,8 +30,13 @@ public class UserTaskSheetDAO {
 		String saveCustomerQuery = "insert into user_task_sheet values(?,?,?,?,?,?,?)";
 		try {
 			PreparedStatement ptmt = connection.prepareStatement(saveCustomerQuery);
-			
-			ptmt.setString(1, taskPlanner.getEmployeeid());
+			HttpSession session = ServletActionContext.getRequest().getSession();
+			if(session.getAttribute("employeeId") != null){
+				ptmt.setString(1, (String) session.getAttribute("employeeId"));
+			}
+			else{
+				ptmt.setString(1, "00000");
+			}
 			ptmt.setString(2,  taskPlanner.getTaskName());
 			ptmt.setString(3,  "Description");
 			ptmt.setTimestamp(4,  convertStringToTimestamp(taskPlanner.getStartTime()));

@@ -25,7 +25,7 @@ Daily Task Planner
 <td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
-<td><s:button value="Save"/></td>
+<td><s:submit cssStyle="float:left; margin-top:10px; margin-left:180px; border:none; background-color:red; color:white; font-weight:bold; height:35px; border-radius:4px;" value="SAVE REPORT"></s:submit></td>
 </tr>
 <tr>
 <td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
@@ -33,7 +33,7 @@ Daily Task Planner
 <td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
-<td><s:button value="Save"/></td>
+<td><s:submit cssStyle="float:left; margin-top:10px; margin-left:180px; border:none; background-color:red; color:white; font-weight:bold; height:35px; border-radius:4px;" value="SAVE REPORT"></s:submit></td>
 </tr>
 <tr>
 <td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
@@ -41,7 +41,7 @@ Daily Task Planner
 <td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
-<td><s:button value="Save"/></td>
+<td><s:submit cssStyle="float:left; margin-top:10px; margin-left:180px; border:none; background-color:red; color:white; font-weight:bold; height:35px; border-radius:4px;" value="SAVE REPORT"></s:submit></td>
 </tr>
 <tr>
 <td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
@@ -49,7 +49,7 @@ Daily Task Planner
 <td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
-<td><s:button value="Save"/></td>
+<td><s:submit cssStyle="float:left; margin-top:10px; margin-left:180px; border:none; background-color:red; color:white; font-weight:bold; height:35px; border-radius:4px;" value="SAVE REPORT"></s:submit></td>
 </tr>
 <tr>
 <td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
@@ -57,7 +57,7 @@ Daily Task Planner
 <td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
-<td><s:button value="Save"/></td>
+<td><s:submit cssStyle="float:left; margin-top:10px; margin-left:180px; border:none; background-color:red; color:white; font-weight:bold; height:35px; border-radius:4px;" value="SAVE REPORT"></s:submit></td>
 </tr>
 <tr>
 <td><s:textfield name="taskPlanner.taskName" id="taskName"/></td>
@@ -65,7 +65,7 @@ Daily Task Planner
 <td><s:textfield name="taskPlanner.stopTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.actualTime" id="stopTime"/></td>
 <td><s:textfield name="taskPlanner.estimatedTime" id="estimatedTime" />
-<td><s:button value="Save"/></td>
+<td><s:submit cssStyle="float:left; margin-top:10px; margin-left:180px; border:none; background-color:red; color:white; font-weight:bold; height:35px; border-radius:4px;" value="SAVE REPORT"></s:submit></td>
 </tr>
 </table>
 </s:form>

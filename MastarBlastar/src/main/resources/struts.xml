@@ -19,6 +19,15 @@
    <result name="SUCCESS">pages/TaskFilling.jsp</result>  
   </action> 
   
+  <action name="taskGenerateReport" class="com.mb.action.GenerateReportAction" method="generateReport">  
+   <result name="SUCCESS">pages/successReport.jsp</result>  
+  </action>
+  
+  <action name="taskPlanner" class="com.mb.action.TaskPlannerAction" method="saveTask">  
+   <result name="SUCCESS">pages/saveSuccess.jsp</result>  
+  </action>
+  
+  
   
  </package>  
   
