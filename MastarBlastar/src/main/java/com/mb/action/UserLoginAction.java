@@ -12,6 +12,16 @@ public class UserLoginAction extends ActionSupport implements SessionAware{
 	
 	private UserDetails userDetails;
 	private String loginStatus;
+	private String employeeId;
+	
+	public String getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
 	public UserDetails getUserDetails() {
 		return userDetails;
 	}
@@ -37,6 +47,7 @@ public class UserLoginAction extends ActionSupport implements SessionAware{
 	public String execute() {
 		UserSignUpDAO user = new UserSignUpDAO();
 		loginStatus = user.checkLogin(userDetails);
+		employeeId = userDetails.getEmployeeid();
 		return "SUCCESS";
 	}
 }
