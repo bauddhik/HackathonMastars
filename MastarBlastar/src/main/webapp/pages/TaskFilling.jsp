@@ -9,7 +9,7 @@ Bauddhik <s:property value='loginStatus'/>
 Daily Task Planner
 </p>
 
-<s:form action="taskPlannerAction">
+<s:form action="taskPlanner">
 
 <table style="border: 1px solid black;" cellpadding="6" cellspacing="0">
   <tr valign="baseline" bgcolor="#404060">

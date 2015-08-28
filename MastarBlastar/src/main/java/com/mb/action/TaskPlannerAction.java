@@ -36,6 +36,14 @@ public void setSession(Map<String, Object> arg0) {
 	// TODO Auto-generated method stub
 	
 }
+public TaskPlanner getTaskPlanner() {
+	return taskPlanner;
+}
+
+public void setTaskPlanner(TaskPlanner taskPlanner) {
+	this.taskPlanner = taskPlanner;
+}
+
 public void saveTask(){
 	System.out.println("taskName::"+taskPlanner.getTaskName());
 }
