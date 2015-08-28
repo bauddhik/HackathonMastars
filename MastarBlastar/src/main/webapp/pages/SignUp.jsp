@@ -18,7 +18,8 @@
 <s:password cssStyle="border: 1px solid grey; border-radius:4px; margin:10px;" name="signUp.password" label="PASSWORD"></s:password>  
 <s:textfield cssStyle="border: 1px solid grey; border-radius:4px; margin:10px;" name="signUp.email" label="EMAIL"></s:textfield>  
 <s:textfield cssStyle="border: 1px solid grey; border-radius:4px; margin:10px;" name="signUp.supemail" label="SUPERVISOR EMAIL"></s:textfield>  
-<s:select cssStyle="border: 1px solid grey; border-radius:4px; margin:10px; width:145px" list="{'MASTARS','FLPS','IMPACTS'}"  name="signUp.project" label="PROJECT"></s:select>  
+<s:select cssStyle="border: 1px solid grey; border-radius:4px; margin:10px; width:145px" list="{'MASTARS','FLPS','IMPACTS'}"  name="signUp.project" label="PROJECT"></s:select>
+<input type="button" value="LOGIN" />  
 <s:submit cssStyle="float:left; margin-top:10px; margin-left:180px; border:none; background-color:red; color:white; font-weight:bold; height:35px; border-radius:4px;" value="REGISTER"></s:submit>  
 </table>
 </s:form> 

@@ -14,7 +14,7 @@ Bauddhik <s:property value='loginStatus'/>
 </s:if>
 <s:else>
 <%  
-     response.sendRedirect("form");  
+     response.sendRedirect("/pages/LoginPage.jsp?action=loginFailed");  
     %> 
 </s:else>
 </body>
